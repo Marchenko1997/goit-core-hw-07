@@ -55,7 +55,8 @@ def show_birthday(args, book):
     record = book.find(name)
     if not record or not record.birthday:
         return "Birthday not found."
-    return f"{name}'s birthday: {record.birthday.value.strftime('%d.%m.%Y')}"
+    return f"{name}'s birthday: {record.birthday.value}"
+
 
 @input_error
 def birthdays(args = None, book = None):
