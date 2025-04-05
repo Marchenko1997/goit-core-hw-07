@@ -1,6 +1,6 @@
 from assistant_bot.utils import parse_input
 from assistant_bot.handlers import handle_command
-from assistant_bot.data import contacts
+from assistant_bot.data import book
 
 def main():
     print("Welcome to assistant bot!")
@@ -13,7 +13,7 @@ def main():
             print("Good bye!")
             break
 
-        result = handle_command(command, args, contacts)
+        result = handle_command(command, args, book)
         print(result)
 
 if __name__ == "__main__":
